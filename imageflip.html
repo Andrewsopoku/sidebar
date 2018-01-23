@@ -1,0 +1,57 @@
+
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+	<script>
+    $(function(){
+    	
+		$(".flip-vertical").flip({
+			axis: 'x',
+  			trigger: 'hover'
+		});
+    });
+  	</script>
+	<style>
+	body{ 
+	font-family:'Open Sans',sans-serif; 
+	margin-top: 50px;
+	text-align: center;
+}
+
+#flip-this {
+	height: 199px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+#flip-this img {
+	width: 300px;
+	height: auto;
+}
+
+#flip-this .back {
+    background: #2184cd;
+    color: #fff;
+    text-align: center;
+}
+	</style>
+</head>
+<body>
+
+	
+	
+	<div id="flip-this" class="flip-vertical"> 
+  		<div class="front"> 
+    		<img src="ext.jpg" alt="" />
+  		</div> 
+  		<div class="back">
+    		<h3>some text here</h3>
+  		</div> 
+	</div>
+
+</body>
+</html>
