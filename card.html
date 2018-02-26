@@ -1,0 +1,129 @@
+<html>
+<head>
+<title>
+
+</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<style>
+
+body{
+background-color:#F1F1F1;
+}
+
+.serviceBox{
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 15px;
+    padding:0 30px 30px 30px;
+    position: relative;
+    transition: all 0.4s ease-in-out 0s;
+    margin-top:25px;
+    background-color:white;
+}
+.serviceBox:hover{
+    transform: scale(1.05, 1.05);
+}
+.serviceBox .service-icon{
+    width: 10px;
+    height: 10px;
+    line-height: 70px;
+    
+    font-size: 30px;
+    color: #428ef8;
+    margin: 0 auto 30px;
+    position: relative;
+    transition: all 0.2s ease-out 0s;
+    margin-top:-10px;
+    float:right;
+    margin-right:10px;
+   
+}
+.serviceBox:hover .service-icon{
+    border-color: #428ef8;
+}
+.serviceBox .service-icon i{
+    transform: rotate(0);
+    transition: all 0.2s ease-out 0s;
+}
+.serviceBox:hover .service-icon i{
+    transform: rotate(360deg);
+    color: #428ef8;
+}
+.serviceBox .title{
+    font-size: 20px;
+    font-weight: bold;
+    color: #4a4a4a;
+    line-height: 40px;
+    margin: 35px 0 35px 0;
+    position: relative;
+}
+.serviceBox .title:after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: #428ef8;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    transition: all 0.2s ease-out 0s;
+}
+.serviceBox:hover .title:after{
+    width: 100%;
+}
+.serviceBox .description{
+    font-size: 12px;
+    color: #7a7a7a;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.serviceBox .read-more{
+    display: inline-block;
+    padding: 8px 22px;
+    background: #428ef8;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: capitalize;
+    border-radius: 40px;
+    transform: scale(1);
+    transition: all 0.2s ease-out 0s;
+}
+.serviceBox .read-more:hover{
+    transform: scale(1.1, 1.1);
+}
+.serviceBox:hover .read-more{
+    background:#428ef8;
+}
+@media only screen and (max-width: 990px){
+    .serviceBox{ margin-bottom: 40px; }
+}</style>
+
+
+</head>
+<body>
+	
+	<div class="container">
+    <div class="row">
+        <div class="col-md-4 ">
+            <div class="serviceBox">
+                <div class="service-icon"><i class="fa fa-check-square"></i></div>
+                <h3 class="title">Web Design</h3>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at sapien at erat psum dolor sit amet, 
+                psum dolor sit amet, consectetur adipiscing elit. Nunc at sapien at erat hendrerit 
+                consectetur adipiscing elit. Nunc at sapien at erat hendrerit hendrerit.</p>
+                <button  class="btn read-more">read more</button>
+            </div>
+        </div>
+ 
+ 
+    </div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.js"
+></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</html>
