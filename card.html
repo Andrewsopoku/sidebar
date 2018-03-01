@@ -10,37 +10,34 @@
 body{
 background-color:#F1F1F1;
 }
-
 .serviceBox{
     border: 1px solid #ddd;
     text-align: center;
     border-radius: 15px;
-    padding:0 30px 30px 30px;
+    padding: 25px;
     position: relative;
     transition: all 0.4s ease-in-out 0s;
-    margin-top:25px;
     background-color:white;
 }
 .serviceBox:hover{
     transform: scale(1.05, 1.05);
 }
 .serviceBox .service-icon{
-    width: 10px;
-    height: 10px;
+    width: 80px;
+    height: 80px;
     line-height: 70px;
-    
-    font-size: 30px;
-    color: #428ef8;
+    border-radius: 50%;
+    border: 5px solid #0C87E5;
+    font-size: 42px;
+    color: #0C87E5;
     margin: 0 auto 30px;
     position: relative;
     transition: all 0.2s ease-out 0s;
-    margin-top:-10px;
-    float:right;
-    margin-right:10px;
-   
+    padding:10px;
 }
 .serviceBox:hover .service-icon{
-    border-color: #428ef8;
+    border-color: #1D56B6;
+    
 }
 .serviceBox .service-icon i{
     transform: rotate(0);
@@ -48,14 +45,14 @@ background-color:#F1F1F1;
 }
 .serviceBox:hover .service-icon i{
     transform: rotate(360deg);
-    color: #428ef8;
+    color: #1D56B6;
 }
 .serviceBox .title{
     font-size: 20px;
     font-weight: bold;
     color: #4a4a4a;
     line-height: 40px;
-    margin: 35px 0 35px 0;
+    margin: 0 0 35px 0;
     position: relative;
 }
 .serviceBox .title:after{
@@ -63,7 +60,7 @@ background-color:#F1F1F1;
     display: block;
     width: 50px;
     height: 4px;
-    background: #428ef8;
+    background: #f1f1f1;
     margin: 0 auto;
     position: absolute;
     bottom: -15px;
@@ -83,7 +80,7 @@ background-color:#F1F1F1;
 .serviceBox .read-more{
     display: inline-block;
     padding: 8px 22px;
-    background: #428ef8;
+    background: #0C87E5;
     font-size: 14px;
     font-weight: 500;
     color: #fff;
@@ -96,30 +93,35 @@ background-color:#F1F1F1;
     transform: scale(1.1, 1.1);
 }
 .serviceBox:hover .read-more{
-    background:#428ef8;
+    background: #1D56B6;
 }
 @media only screen and (max-width: 990px){
     .serviceBox{ margin-bottom: 40px; }
-}</style>
+}
+</style>
 
 
 </head>
 <body>
-	
-	<div class="container">
+<div class="container">
     <div class="row">
-        <div class="col-md-4 ">
+        <div class="col-md-3 col-sm-6">
             <div class="serviceBox">
-                <div class="service-icon"><i class="fa fa-check-square"></i></div>
+                <div class="service-icon"><i class="fa fa-globe"></i></div>
                 <h3 class="title">Web Design</h3>
-                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at sapien at erat psum dolor sit amet, 
-                psum dolor sit amet, consectetur adipiscing elit. Nunc at sapien at erat hendrerit 
-                consectetur adipiscing elit. Nunc at sapien at erat hendrerit hendrerit.</p>
-                <button  class="btn read-more">read more</button>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at sapien at erat hendrerit.</p>
+                <a href="#" class="read-more">read more</a>
             </div>
         </div>
  
- 
+        <div class="col-md-3 col-sm-6">
+            <div class="serviceBox">
+                <div class="service-icon"><i class="fa fa-rocket"></i></div>
+                <h3 class="title">Web Development</h3>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at sapien at erat hendrerit.</p>
+                <a href="#" class="read-more">read more</a>
+            </div>
+        </div>
     </div>
 </div>
 </body>
